@@ -39,18 +39,14 @@ for (let i = 0; i < 11; i++) {
     console.log(i)
 }*/
 
-/*function pricePizza(size) {
+function pricePizza(size) {
     const largePizza = 17
     const smallPizza = 13
-    if (size == 'large') {
-        return largePizza
-    } else if (size == 'small') {
-        return smallPizza
-    }
+    return pizzareturn = (size == 'large') ? largePizza : (size == 'small') ? smallPizza : null
 }
-console.log(pricePizza('small'))*/
+console.log(pricePizza('large'))
 
-let x = 3;
+/*let x = 3;
 function checkScope() {
     console.log('function check')
     let y = 4;
@@ -70,4 +66,4 @@ try {
     console.log(y)
 } catch (error) {
     console.log('out of scope')
-}
+}*/
