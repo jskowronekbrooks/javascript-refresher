@@ -4,18 +4,18 @@ let message = 'How are you today?';
 //console.log(message)
 
 let greeting = 'Hello';
-let name = 'Sue';
-//console.log(greeting + ' ' + name + "!");
+let fname = 'Sue';
+//console.log(greeting + ' ' + fname + "!");
 
 let age = 13;
 //console.log('You are ' + age)
 
-//console.log("In ten years you will be " + (10 + age))*/
+//console.log("In ten years you will be " + (10 + age))
 
 //Part 2
 
-/*if (name == 'Bob') {
-    console.log('I knew it was you, ' + name + '!')
+/*if (fname == 'Bob') {
+    console.log('I knew it was you, ' + fname + '!')
 } else {
     console.log('Hey Sue, you\'re not Bob!')
 }
@@ -31,26 +31,42 @@ if (iAmWearingABelt && !iAmWearingGlasses) {
     console.log('Probably just some dude')
 }*/
 
-/*for (let i = 0; i < 6; i++) {
+//Part 3
+
+for (let i = 0; i < 6; i++) {
     console.log((i + 1) + '. comp sci is awesome')
 }
 
 for (let i = 0; i < 11; i++) {
     console.log(i)
-}*/
+}
+
+tellMeMyAge()
+function tellMeMyAge() {
+    console.log('You are ' + age + ' years old.')
+}
+
+makePizza('pineaple', 'large')
+makePizza('sausage', 'small')
+function makePizza(type, size) {
+    console.log('One ' + size + ' ' + type + ' pizza coming up!')
+}
 
 function pricePizza(size) {
     const largePizza = 17
     const smallPizza = 13
     return pizzareturn = (size == 'large') ? largePizza : (size == 'small') ? smallPizza : null
 }
+
+//let howMuchForAPizza = pricePizza('large')
+//console.log(howMuchForAPizza)
 console.log(pricePizza('large'))
 
-/*let x = 3;
+let x = 3
 function checkScope() {
-    console.log('function check')
-    let y = 4;
-    console.log(y);
+    console.log('\nfunction check')
+    let y = 4
+    console.log(y)
     try {
         console.log(x)
     } catch (error) {
@@ -66,4 +82,4 @@ try {
     console.log(y)
 } catch (error) {
     console.log('out of scope')
-}*/
+}
